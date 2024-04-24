@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Astar
+namespace Astar.AstarAlgorithm
 {
     public class PuzzleSolver
     {
@@ -110,9 +110,9 @@ namespace Astar
 
         public bool StateEquals(int[][] otherState)
         {
-            for (int i = 0; i < this.State.Length; i++)
-                for (int j = 0; j < this.State[i].Length; j++)
-                    if (this.State[i][j] != otherState[i][j])
+            for (int i = 0; i < State.Length; i++)
+                for (int j = 0; j < State[i].Length; j++)
+                    if (State[i][j] != otherState[i][j])
                         return false;
             return true;
         }
